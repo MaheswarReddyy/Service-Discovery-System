@@ -1,0 +1,118 @@
+{
+  "config": {
+    "version": 5,
+    "requestTimeout": 5000,
+    "maxRetries": 4,
+    "healthCheckInterval": 10,
+    "loadBalancing": "Least Connections",
+    "updatedAt": 1795672893.7254481
+  },
+  "services": [
+    {
+      "name": "User Service",
+      "instance": "user-01",
+      "status": "Healthy",
+      "version": "v1.2",
+      "port": 8081,
+      "availability_zone": "az-1",
+      "config_version": 5,
+      "last_heartbeat": 1795672930.663918
+    },
+    {
+      "name": "User Service",
+      "instance": "user-02",
+      "status": "Healthy",
+      "version": "v1.2",
+      "port": 8082,
+      "availability_zone": "az-2",
+      "config_version": 5,
+      "last_heartbeat": 1795672795.69983
+    },
+    {
+      "name": "Order Service",
+      "instance": "order-01",
+      "status": "Healthy",
+      "version": "v2.1",
+      "port": 8083,
+      "availability_zone": "az-1",
+      "config_version": 5,
+      "last_heartbeat": 1795672795.69983
+    },
+    {
+      "name": "Order Service",
+      "instance": "order-02",
+      "status": "Healthy",
+      "version": "v2.1",
+      "port": 8084,
+      "availability_zone": "az-2",
+      "config_version": 5,
+      "last_heartbeat": 1795672795.69983
+    },
+    {
+      "name": "Payment Service",
+      "instance": "payment-01",
+      "status": "Healthy",
+      "version": "v1.5",
+      "port": 8085,
+      "availability_zone": "az-1",
+      "config_version": 5,
+      "last_heartbeat": 1795672795.69983
+    },
+    {
+      "name": "Payment Service",
+      "instance": "payment-02",
+      "status": "Healthy",
+      "version": "v1.5",
+      "port": 8086,
+      "availability_zone": "az-2",
+      "config_version": 5,
+      "last_heartbeat": 1795672795.69983
+    },
+    {
+      "name": "Notification Service",
+      "instance": "notification-01",
+      "status": "Healthy",
+      "version": "v1.1",
+      "port": 8087,
+      "availability_zone": "az-1",
+      "config_version": 5,
+      "last_heartbeat": 1795672795.69983
+    }
+  ],
+  "partition_active": false,
+  "fault_log": [
+    {
+      "id": "fault-001",
+      "fault_type": "INSTANCE_CRASH",
+      "affected_instances": [
+        "user-01"
+      ],
+      "timestamp": 1795672795.6662874,
+      "recovery_status": "RECOVERED"
+    },
+    {
+      "id": "fault-002",
+      "fault_type": "STALE_CONFIG",
+      "affected_instances": [
+        "order-01"
+      ],
+      "timestamp": 1795672795.7241282,
+      "recovery_status": "RECOVERED"
+    },
+    {
+      "id": "fault-003",
+      "fault_type": "INSTANCE_CRASH",
+      "affected_instances": [
+        "user-01"
+      ],
+      "timestamp": 1795672915.7882426,
+      "recovery_status": "RECOVERED"
+    }
+  ],
+  "telemetry": {
+    "uptime": 99.98,
+    "requestRate": 1300,
+    "responseTime": 159,
+    "errorRate": 0.12
+  }
+}

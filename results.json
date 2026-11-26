@@ -1,0 +1,63 @@
+{
+  "KPI-1_discovery_correctness_under_churn_pct": {
+    "k": 72,
+    "n": 133,
+    "value": 54.14,
+    "ci95": [
+      45.67,
+      62.37
+    ]
+  },
+  "KPI-2_config_consistency_pct": {
+    "k": 231,
+    "n": 300,
+    "value": 77.0,
+    "ci95": [
+      71.91,
+      81.4
+    ]
+  },
+  "KPI-3_availability_under_partition_pct": {
+    "k": 29,
+    "n": 65,
+    "value": 44.62,
+    "ci95": [
+      33.17,
+      56.66
+    ]
+  },
+  "KPI-4_recovery_rate_pct": {
+    "k": 108,
+    "n": 150,
+    "value": 72.0,
+    "ci95": [
+      64.33,
+      78.57
+    ]
+  },
+  "KPI-5_service_error_rate_pct": {
+    "k": 150,
+    "n": 1000,
+    "value": 15.0,
+    "ci95": [
+      12.92,
+      17.35
+    ]
+  },
+  "KPI-6_latency_ms": {
+    "p50": 135.05,
+    "p95": 384.25,
+    "p99": 456.25,
+    "p95_ci95": [
+      363.66,
+      414.67
+    ]
+  },
+  "sha256": {
+    "request_telemetry.csv": "fda91b36311087388f60c696cd94956fe58b2a9e61823d3283a2428e3c473019",
+    "service_registry_events.csv": "b77059ee488c428d32789211b3ecb129bd1574b5585bd47e73de2e369c686375",
+    "dynamic_config_events.csv": "62bed7d482bc0dac432034a91f3910fc13484c6eac1531695f06ca7500278860",
+    "fault_injection_events.csv": "2e6cfb2f37e44d00f19f5da96afe8a2da240b9ccbd174ac47433de9f14667027",
+    "service_inventory.csv": "dc2b61f03a0a28e1544b35d0f389540b7ce46cb5b4ebee376ddcdd071c22c919"
+  }
+}
